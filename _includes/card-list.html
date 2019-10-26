@@ -1,0 +1,37 @@
+{% for pet in page.pets %}
+<div class="pet-card">
+  <h1>{{pet.name}}</h1>
+  <div class="row">
+    <div class="col-md-4 col-xs-12 col-sm-12">
+      <div class="card-photo">
+        <a class="js-fancybox" href="javascript:;"  data-src="{{ site.url }}/assets/photos/{{pet.photo}}" data-animate-in="zoomIn" data-animate-out="zoomOut" data-speed="1000" data-overlay-bg="rgba(0, 0, 0, 1)">
+          <img class="img-fluid" src="{{ site.url }}/assets/photos/{{pet.photo}}">
+        </a>        
+        
+      </div>
+    </div>
+    <div class="col-md-8 col-xs-12 col-sm-12">
+      <div class="card-text">
+        {% if pet.dob %}<p><i><b>Дата рождения:</b></i> {{pet.dob}}</p>{% endif %}
+        {% if pet.sex %}<p><i><b>Пол:</b></i> {{pet.sex}}</p>{% endif %}
+        {% if pet.father %}<p><i><b>Отец:</b></i> {{pet.father}}</p>{% endif %}
+        {% if pet.mother %}<p><i><b>Мать:</b></i> {{pet.mother}}</p>{% endif %}
+        {% if pet.color %}<p><i><b>Окрас:</b></i> {{pet.color}}</p>{% endif %}
+        {% if pet.titles %}<p><i><b>Титулы:</b></i> <span style="text-transform: uppercase">{{pet.titles}}</span></p>{% endif %}
+        {% if pet.tests %}<p><i><b>Тесты:</b></i> {{pet.tests}}</p>{% endif %}
+        {% if pet.text %}<p> {{pet.text}}</p>{% endif %}
+      </div>
+    </div>
+  </div>  
+  <div class="row">  
+    <div class="col-md-12 center-text">
+      {% if pet.link %}
+      <p class="text-center"><a href="{{ site.url }}/{{pet.link}}" class="button align-items-center ">Подробнее...</a></p>
+      {% endif %}
+    </div>  
+  </div>
+  <div class="hr"></div>
+</div>
+
+{% endfor %}
+
