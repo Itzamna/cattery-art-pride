@@ -50,7 +50,10 @@ p {
 
 }
 
-
+.main-text a{
+    text-decoration: none;
+    border-bottom: 1px solid #ddce94;
+}
 a {
   color: #ddce94;
   font-family:  Georigia, serif;
@@ -189,6 +192,11 @@ h3.hline-1{
 .pet-card, .pet-card a {
   font-size: 14pt;
   color: #a3946f;
+  
+}
+.card-photo a, .pet-photo a, .littermates a  {
+  text-decoration: none;
+  border-bottom: none;
 }
 .pet-card a {
   text-decoration: underline;
@@ -307,7 +315,7 @@ input.button:hover{
   font: 1.1em  'Academy', Georgia, Tahoma, Verdana, sans-serif;
   text-transform: uppercase;
   font-weight: bold;
-  margin-top:148px;
+  margin-top:150px;
   margin-left:10px;
 }
 .top-contacts{
@@ -779,7 +787,13 @@ li.nav-link{
   margin-right:0px;
 
 }
+  .main-text img {
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    width:100% !important;
 
+  }
 }
 @media (min-width: 577px) and (max-width: 768px) {
   .hs-has-sub-menu-1 {
@@ -807,6 +821,13 @@ li.nav-link{
   }
   .container{
     max-width:100%;
+  }
+  .main-text img {
+    max-width: 100%;
+    height: auto;
+    margin: 0px;
+    width:100% !important;
+
   }
 }
 @media (max-width: 576px) {
@@ -838,6 +859,8 @@ li.nav-link{
     max-width: 100%;
     height: auto;
     margin: 0px;
+    width:100% !important;
+
   }
 .article-img {
     width: 100%;
