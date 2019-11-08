@@ -772,17 +772,13 @@ table.table-pedigree td.blck-pedigree-table{
 	padding: 0;
   
 }
-@media (min-width: 1025px) {
-.h-70{
-    padding-left:35px;
-  }
-li.nav-link{
-  margin-left:7px;
-
-}
-}
 @media (min-width: 769px) and (max-width: 1024px) {
-
+  .hs-has-sub-menu-1 {
+    background: url(../images/hum-button.jpg)  center 0 repeat-x;
+    height: 48px;
+    width:100%;
+    padding-top: 10px;
+  }
 .top-contacts{
   margin-right:0px;
 
@@ -792,7 +788,14 @@ li.nav-link{
     height: auto;
     margin: 0px;
     width:100% !important;
+  }
+.contacts {
+  width: 100%;
+  overflow-y: scroll;
 
+  }
+  .littermates, .article-block, .contacts{
+    background-image: none;
   }
 }
 @media (min-width: 577px) and (max-width: 768px) {
@@ -803,6 +806,9 @@ li.nav-link{
     width:100%;
     padding-top: 10px;
 
+  }
+ .littermates, .article-block, .contacts{
+    background-image: none;
   }
   .main-header{
     background-image: url(../images/top-pad.png) !important;
@@ -822,6 +828,11 @@ li.nav-link{
   .container{
     max-width:100%;
   }
+.contacts {
+  width: 100%;
+  overflow-y: scroll;
+
+  }
   .main-text img {
     max-width: 100%;
     height: auto;
@@ -839,6 +850,10 @@ li.nav-link{
     height: 48px;
     width:100%;
     padding-top: 10px;
+  }
+.contacts {
+  width: 100%;
+  overflow-y: scroll;
   }
   .navigation-m {
       margin-top: 200px;
